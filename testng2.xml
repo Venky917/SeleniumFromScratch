@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  parallel = "tests" name="Suite">
+
+
+<listeners>
+<listener class-name="VenkateshAcademy.TestComponents.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="SubmitOrderTest1">
+    <classes>
+      <class name="VenkateshAcademy.Tests.SubmitOrderTest"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="Error Validation Test">
+    <classes>
+      <class name="VenkateshAcademy.Tests.ErrorValidationsTests"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
